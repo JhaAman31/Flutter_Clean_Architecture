@@ -133,6 +133,17 @@ class _FormPageState extends State<FormPage> {
                                 content: Text("Form Submitted Successfully"),
                               ),
                             );
+                            nameController.clear();
+                            emailController.clear();
+                            stateController.clear();
+                            cityController.clear();
+                            phoneController.clear();
+                            genderController.clear();
+                            countryController.clear();
+
+                            setState(() {
+                              _isFormValid = false;
+                            });
                           }
                         },
                         btnText: "Submit",
